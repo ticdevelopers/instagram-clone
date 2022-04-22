@@ -1,0 +1,146 @@
+.app__post {
+  background: var(--white);
+  border: var(--border);
+  border-radius: 5px;
+  margin: 10px 0;
+
+  .app__post-top {
+    width: 100%;
+
+    .top__container {
+      height: 50px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .top__container-user {
+        display: flex;
+        align-items: center;
+
+        .poststatus {
+          padding: 2px;
+          height: 40px;
+          width: 40px;
+          border: 1px solid red;
+          border-radius: 50%;
+          margin-right: 5px;
+        }
+        img {
+          height: 100%;
+          width: 100%;
+          border-radius: 50%;
+        }
+      }
+
+      .top__container-options {
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+
+        span {
+          height: 5px;
+          width: 5px;
+          background: gray;
+          border-radius: 50%;
+          margin: 2px;
+        }
+      }
+    }
+  }
+
+  .post__img-container {
+    width: 100%;
+
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .posts__reactions-container {
+    display: flex;
+    flex-direction: column;
+    transition: var(--trans);
+    background: var(--white);
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+
+    .reactions__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .reactions__top-left {
+        display: flex;
+        align-items: center;
+
+        svg {
+          margin: 0 5px;
+          transition: var(--trans);
+
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+        .rotate {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+
+    .container__content {
+      display: flex;
+      flex-direction: column;
+
+      .post__view {
+        color: gray;
+        font-size: 13px;
+        margin-top: 5px;
+        cursor: pointer;
+      }
+
+      .time__post {
+        text-transform: uppercase;
+        color: gray;
+        font-size: 13px;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .post__comments {
+    border-top: var(--border);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .comment__container {
+      display: flex;
+      align-items: center;
+      flex: 1;
+
+      input {
+        border: none;
+        outline: none;
+        background: none;
+        padding: 0 10px;
+        width: 100%;
+        height: 40px;
+        font-size: 15px;
+      }
+    }
+
+    button {
+      display: flex;
+      border: none;
+      background: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}

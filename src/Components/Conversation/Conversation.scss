@@ -1,0 +1,41 @@
+.app__conversation {
+  width: 100%;
+  height: 70px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  transition: var(--trans);
+
+  &:hover {
+    background: var(--light__white);
+    cursor: pointer;
+  }
+
+  img {
+    height: 56px;
+    width: 56px !important;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+
+  .message__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      font-weight: 500;
+
+      &:last-child {
+        font-size: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        font-weight: normal;
+        color: var(--gray);
+      }
+    }
+  }
+}

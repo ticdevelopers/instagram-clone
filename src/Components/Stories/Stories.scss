@@ -1,0 +1,32 @@
+.app__stories {
+  display: flex;
+  align-items: center;
+  background: var(--white);
+  border: var(--border);
+  margin-top: 20px;
+  transition: var(--trans);
+  border-radius: 5px;
+  width: 60%;
+  height: 100px;
+
+  .app__stories-container {
+    width: 100%;
+    padding: 12px;
+    display: flex;
+
+    .status {
+      height: 70px;
+      border: 1px solid rgba($color: #300b0b, $alpha: 1);
+      border-radius: 50%;
+      padding: 2px;
+      margin: 5px;
+      width: 70px;
+      img {
+        border-radius: 50%;
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+  }
+}
